@@ -455,7 +455,7 @@
     z-index: 1020;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1750px) {
   .sticky-3xl-top {
     position: sticky;
     top: 0;
@@ -5316,7 +5316,7 @@
     text-align: center !important;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1750px) {
   .float-3xl-start {
     float: left !important;
   }

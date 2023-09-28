@@ -74,15 +74,20 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        transition: .3s all ease-in-out;
                         @include min(lg){
                             width: 160px;
                             height: 224px;
                         }
+                        &:hover{
+                            transform: translateY(-10px);
+                            box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
+                        }
                         img{
                             width: auto;
                             height: auto;
-                            max-width: 100%;
-                            max-height: 100%;
+                            max-width: 80%;
+                            max-height: 80%;
                         }
 
                     }
@@ -103,31 +108,38 @@
             }
             .title-big{
                 font-size: 55px;
-                font-weight: 400;
+                font-weight: 600;
                 margin-bottom: 0;
+                line-height: 1.2;
+                font-family: "Manrope", sans-serif;
+                text-transform: uppercase;
 
                 @include min (xl){
                     font-size: 80px;
                 }
                 @include min (xxl){
-                    font-size: 100px;
+                    font-size: 80px;
                 }
                 @include min (3xl){
-                    font-size: 120px;
+                    font-size: 100px;
                 }
                 > span{
                     display: flex;
                     align-items: center;
                     img{
                         display: block;
-                        width: 100px;
+                        width: 80px;
+                        margin-right: 10px;
+                       
                         @include min (xl){
-                            width: 150px;
+                            width: 100px;
+                            margin-right: 30px;
                         }
                         @include min (xxl){
-                            width: 180px;
+                            width: 120px;
                         }
                         @include min (3xl){
+                            margin-right: 40px;
                             width: auto;
                         }
                     }

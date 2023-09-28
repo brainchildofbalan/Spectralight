@@ -14,6 +14,7 @@ body{
     align-items: center;
     color: #fff;
     text-decoration: none;
+    transition: .3s all ease-in-out;
     &:hover{
         background-color: #4a34d8;
         color: #fff;
@@ -34,6 +35,7 @@ body{
     align-items: center;
     color: #ffffff;
     text-decoration: none;
+    transition: .3s all ease-in-out;
     &:hover{
         background-color: #fff;
         color: #000;
@@ -46,17 +48,17 @@ body{
 .title{
     font-size: 25px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 16px;
     line-height: 150%; /* 150% */
     @include min(lg){
-        font-size: 28px;
+        font-size: 22px;
     }
     @include min(xxl){
-        font-size: 38px;
+        font-size: 32px;
     }
     @include min(3xl){
-        font-size: 48px;
+        font-size: 42px;
     }
 }
 .description{

@@ -865,7 +865,7 @@ progress {
     max-width: 1320px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1750px) {
   .container-3xl, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1600px;
   }
@@ -877,7 +877,7 @@ progress {
   --skin-breakpoint-lg: 992px;
   --skin-breakpoint-xl: 1200px;
   --skin-breakpoint-xxl: 1400px;
-  --skin-breakpoint-3xl: 1500px;
+  --skin-breakpoint-3xl: 1750px;
 }
 
 .row {
@@ -1951,7 +1951,7 @@ progress {
     --skin-gutter-y: 3rem;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1750px) {
   .col-3xl {
     flex: 1 0 0%;
   }
@@ -2347,7 +2347,7 @@ progress {
     -webkit-overflow-scrolling: touch;
   }
 }
-@media (max-width: 1499.98px) {
+@media (max-width: 1749.98px) {
   .table-responsive-3xl {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -3590,7 +3590,7 @@ textarea.form-control-lg {
     left: auto;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1750px) {
   .dropdown-menu-3xl-start {
     --bs-position: start;
   }
@@ -4364,7 +4364,7 @@ textarea.form-control-lg {
     overflow-y: visible;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1750px) {
   .navbar-expand-3xl {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -4874,7 +4874,7 @@ textarea.form-control-lg {
     border-left-width: var(--skin-list-group-border-width);
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1750px) {
   .list-group-horizontal-3xl {
     flex-direction: row;
   }
@@ -5271,7 +5271,7 @@ textarea.form-control-lg {
     overflow-y: auto;
   }
 }
-@media (max-width: 1499.98px) {
+@media (max-width: 1749.98px) {
   .modal-fullscreen-3xl-down {
     width: 100vw;
     max-width: none;
@@ -5954,7 +5954,7 @@ textarea.form-control-lg {
   }
 }
 
-@media (max-width: 1499.98px) {
+@media (max-width: 1749.98px) {
   .offcanvas-3xl {
     position: fixed;
     bottom: 0;
@@ -5970,12 +5970,12 @@ textarea.form-control-lg {
     transition: var(--skin-offcanvas-transition);
   }
 }
-@media (max-width: 1499.98px) and (prefers-reduced-motion: reduce) {
+@media (max-width: 1749.98px) and (prefers-reduced-motion: reduce) {
   .offcanvas-3xl {
     transition: none;
   }
 }
-@media (max-width: 1499.98px) {
+@media (max-width: 1749.98px) {
   .offcanvas-3xl.offcanvas-start {
     top: 0;
     left: 0;
@@ -6014,7 +6014,7 @@ textarea.form-control-lg {
     visibility: visible;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1750px) {
   .offcanvas-3xl {
     --skin-offcanvas-height: auto;
     --skin-offcanvas-border-width: 0;
@@ -6371,7 +6371,7 @@ textarea.form-control-lg {
     z-index: 1020;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1750px) {
   .sticky-3xl-top {
     position: sticky;
     top: 0;
@@ -11088,7 +11088,7 @@ textarea.form-control-lg {
     text-align: center !important;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1750px) {
   .float-3xl-start {
     float: left !important;
   }

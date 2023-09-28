@@ -2,22 +2,38 @@
     <div class="container">
         <div class="header-wrapper">
 
-            <div class="logo">
-                <img src="./assets/images/logo.svg" alt="">
+            <div class="logo-wrapper">
+                <a href="./index.php" class="logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </a>
             </div>
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <a href="/">
+                            <span>Home</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="/">About us</a>
+                        <a href="/">
+                            <span>
+                                About us
+                            </span>
+                        </a>
                     </li>
                     <li>
-                        <a href="/">Services</a>
+                        <a href="/">
+                            <span>
+                                Services
+                            </span>
+                        </a>
                     </li>
                     <li>
-                        <a href="./contact-us.php">Contact us</a>
+                        <a href="./contact-us.php">
+                            <span>
+                                Contact us
+                            </span>
+                        </a>
                     </li>
 
                 </ul>

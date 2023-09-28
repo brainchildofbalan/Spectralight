@@ -71,23 +71,24 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            padding-top: 140px;
+            padding-top: 12vh;
+            padding-bottom: 50px;
             .head1{
                 line-height: 137.931%;
-                letter-spacing: -0.87px;
+                letter-spacing: 0;
                 font-size: 30px;
                 text-transform: uppercase;
                 width: 100%;
                 max-width: 500px;
                 margin-bottom: 10px;
-                line-height: 137.931%;
+                line-height: 150%;
                 @include min(xxl){
-                    font-size: 44px;
-                    max-width: 500px;
-                    margin-bottom: 1.25rem;
+                    font-size: 38px;
+                    max-width: 470px;
+                    margin-bottom: 16px;
                 }
                 @include min(3xl){
-                    font-size: 58px;
+                    font-size: 44px;
                     max-width: 600px;
                 }
                 .head-inner2{
@@ -109,8 +110,8 @@
                 margin-bottom: 20px;
                 line-height: 165%;
                 @include min(lg){
-                    font-size: 18px;
-                    max-width: 460px;
+                    font-size: 17px;
+                    max-width: 440px;
                     margin-bottom: 30px;
                 }
                 @include min(3xl){
@@ -131,7 +132,7 @@
                     padding-right: 0;
                 }
                 @include min (sm){
-                    gap: 30px;
+                    gap: 20px;
                     justify-content: flex-start;
                     a{
                         width: auto;
