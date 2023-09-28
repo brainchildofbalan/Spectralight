@@ -1,0 +1,77 @@
+.testing{
+    width: 100%;
+    position: relative;
+    padding: 50px 0px;
+    background-color: #5F47F8;
+    color: #fff;
+    overflow: hidden;
+    @include min(lg){
+        padding: 90px 0px;
+    }
+     .row {
+            flex-direction: column-reverse;
+            @include min(lg){
+                flex-direction: row;
+            }
+            & > div{
+                display: flex;
+                align-items: center;
+            }
+        }
+
+    .content-area{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .title{
+            width: 100%;
+            max-width: 570px;
+            line-height: 150%;
+            margin-bottom: 30px;
+        }
+        .description{
+            width: 100%;
+            max-width: 659px;
+            line-height: 150%;
+        }
+    }
+
+    .image-main{
+        width: 100%;
+        max-width: 250px;
+        position: relative;
+        margin: 80px auto;
+        @include min(lg){
+            max-width: 380px;
+        }
+        .image-wrapper{
+            width: 100%;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            &::after{
+                display: block;
+                width: 100%;
+                position: relative;
+                padding-bottom: 100%;
+                content: '';
+            }
+            img{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .bg{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: scale(1.5);
+        }
+    }
+}

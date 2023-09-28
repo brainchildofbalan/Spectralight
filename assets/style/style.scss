@@ -1,0 +1,30 @@
+
+@import './bootstrap/bootstrap.scss';
+@import './variables.scss';
+@import './mixins';
+@import './common.scss';
+@import './swiper.scss';
+@import './components/header';
+@import './components/footer';
+@import './components/banner';
+@import './components/welcome';
+@import './components/our-ethos';
+@import './components/partners';
+@import './components/testimonials';
+@import './components/testing';
+@import './components/contact_us';
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@200;400;500;600&display=swap');
+body{
+    background: #030014;
+}
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, p{
+    padding: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+

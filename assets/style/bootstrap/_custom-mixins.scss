@@ -1,0 +1,280 @@
+
+//image ratio mixin
+@mixin ratio( $width: 100, $height: 200) {
+    &::after{
+        width: 100%;
+        padding-bottom: calc($height/$width*100%);
+        content: '';
+        position: relative;
+        display: inline-block;
+    }
+  
+    > *{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+//generate breakpoints for ease of use.
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+
+
+
+// font size to rem.
+// change base font size if required.
+$base-size: 16;
+@function size($target, $context: $base-size) {
+  @return calc($target / $context) * 1rem;
+}
+
+
+
+$image-ratios : (
+    1x1 : (1 : 1,),
+    3x2 : (3 : 2,),
+    5x4 : (5 : 4,),
+    16x9 : (16 : 9,),
+    9x16 : (9 : 16,),
+
+);
+
+
+@each $level, $size in $image-ratios {
+  .ratio-#{$level} {
+    width: 100%;
+    position: relative;
+    @each $width, $height in $size {
+    
+        @include ratio($width, $height);
+      } 
+    
+  }
+}
+
+
+
+
+// // headings
+// $h-sizes: (
+//   1: (
+//     null: 40,
+//     992: 45,
+//     1200: 64,
+//     1600: 80,
+//   ),
+//   2: (
+//     null: 30,
+//     992: 34,
+//     1200: 40,
+//     1600: 55,
+//   ),
+//   3: (
+//     null: 28,
+//     992: 35,
+//     1200: 45,
+//   ),
+//   4: (
+//     null: 24,
+//     992: 30,
+//     1200: 40,
+//   ),
+//   5: (
+//     null: 18,
+//     768: 24,
+//     1200: 30,
+//   ),
+//   6: (
+//     null: 18,
+//     992: 18,
+//   ),
+// );
+
+// // paragraphs
+// $p-sizes: (
+//   14: (
+//     null: 14,
+//   ),
+//   15: (
+//     null: 14,
+//     768: 15,
+//     1200: 15,
+//   ),
+//   16: (
+//     null: 18,
+//     768: 19,
+//     1200: 16,
+//   ),
+//   18: (
+//     null: 16,
+//     1200: 18,
+//   ),
+//   20: (
+//     null: 16,
+//     768: 20,
+//   ),
+//   24: (
+//     null: 20,
+//     1200: 20,
+//     1600: 24,
+//   ),
+//   28: (
+//     null: 20,
+//     1200: 24,
+//   ),
+//   32: (
+//     null: 24,
+//     1200: 28,
+//     1600: 32,
+//   )
+// );
+
+
+
+
+// // headings
+// $h-ttl: (
+//   120: (
+//     null: 40,
+//     992: 70,
+//     1200: 90,
+//     1600: 120,
+//   ),
+//   100: (
+//     null: 40,
+//     992: 70,
+//     1200: 90,
+//     1600: 100,
+//   ),
+//   80: (
+//     null: 40,
+//     992: 50,
+//     1200: 60,
+//     1600: 80,
+//   ),
+//   50: (
+//     null: 40,
+//     992: 34,
+//     1200: 50,
+//     1600: 50,
+//   ),
+//   40: (
+//     null: 24,
+//     992: 34,
+//     1200: 40,
+//     1600: 40,
+//   ),
+//   32: (
+//     null: 24,
+//     992: 26,
+//     1200: 28,
+//     1600: 32,
+//   ),
+//   30: (
+//     null: 28,
+//     992: 35,
+//     1200: 30,
+//   ),
+//   28: (
+//     null: 24,
+//     992: 25,
+//     1600: 28,
+//   ),
+//   24: (
+//     null: 18,
+//     992: 30,
+//     1200: 24,
+//   ),
+//   20: (
+//     null: 20,
+//     992: 20,
+//     1200: 20,
+//   ),
+//   18: (
+//     null: 14,
+//     992: 18,
+//   ),
+// );
+
+
+
+
+
+
+
+
+
+// // font sizes
+// @each $level, $size in $h-sizes {
+//   .h#{$level} {
+//     @each $bp, $fs in $size {
+//       @if ($bp == null) {
+//         font-size: size($fs);
+//       } @else {
+//         @include min($bp) {
+//           font-size: size($fs);
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// @each $level, $size in $h-ttl {
+//   .ttl-#{$level} {
+//     @each $bp, $fs in $size {
+//       @if ($bp == null) {
+//         font-size: size($fs);
+//       } @else {
+//         @include min($bp) {
+//           font-size: size($fs);
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+
+// @each $level, $size in $p-sizes {
+//   .fs-#{$level} {
+//     @each $bp, $fs in $size {
+//       @if ($bp == null) {
+//         font-size: size($fs);
+//       } @else {
+//         @include min($bp) {
+//           font-size: size($fs);
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+

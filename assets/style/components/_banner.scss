@@ -1,0 +1,170 @@
+.banner-wrapper{
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    background-color: #00002E;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding-bottom: 50px;
+    @include min (lg){
+        align-items: center;
+        padding-bottom: 0px;
+    }
+
+    &::after{
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: rgb(0,0,48);
+        background: -moz-linear-gradient(180deg, rgba(0,0,48,1) 0%, rgba(0,0,48,1) 13%, rgba(0,0,48,0) 34%);
+        background: -webkit-linear-gradient(180deg, rgba(0,0,48,1) 0%, rgba(0,0,48,1) 13%, rgba(0,0,48,0) 34%);
+        background: linear-gradient(180deg, rgba(0,0,48,1) 0%, rgba(0,0,48,1) 13%, rgba(0,0,48,0) 34%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000030",endColorstr="#000030",GradientType=1);
+        @include min (lg){
+            width: 62%;
+            background: rgb(0,0,52);
+            background: -moz-linear-gradient(90deg, rgba(0,0,52,1) 0%, rgba(0,0,52,1) 78%, rgba(0,0,52,0) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(0,0,52,1) 0%, rgba(0,0,52,1) 78%, rgba(0,0,52,0) 100%);
+            background: linear-gradient(90deg, rgba(0,0,52,1) 0%, rgba(0,0,52,1) 78%, rgba(0,0,52,0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000034",endColorstr="#000034",GradientType=1);
+        }
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgb(0,0,48);
+        background: -moz-linear-gradient(0deg, rgba(0,0,48,1) 0%, rgba(0,0,48,1) 23%, rgba(0,0,48,0) 64%);
+        background: -webkit-linear-gradient(0deg, rgba(0,0,48,1) 0%, rgba(0,0,48,1) 23%, rgba(0,0,48,0) 64%);
+        background: linear-gradient(0deg, rgba(0,0,48,1) 0%, rgba(0,0,48,1) 23%, rgba(0,0,48,0) 64%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000030",endColorstr="#000030",GradientType=1);
+        z-index: 9;
+        
+        @include min(lg){
+            opacity: .3;
+            width: 847.595px;
+            height: 847.595px;
+            position: absolute;
+            left: -12%;
+            top: 0;
+            transform: translateY(-50%);
+            background: rgb(7,5,193);
+            background: -moz-radial-gradient(circle, rgba(7,5,193,1) 0%, rgba(7,5,193,0) 60%);
+            background: -webkit-radial-gradient(circle, rgba(7,5,193,1) 0%, rgba(7,5,193,0) 60%);
+            background: radial-gradient(circle, rgba(7,5,193,1) 0%, rgba(7,5,193,0) 60%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0705c1",endColorstr="#0705c1",GradientType=1);
+        }
+    }
+
+    .main-wrapper{
+        position: relative;
+        color: #fff;
+        z-index: 10;
+        .head{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 140px;
+            .head1{
+                line-height: 137.931%;
+                letter-spacing: -0.87px;
+                font-size: 30px;
+                text-transform: uppercase;
+                width: 100%;
+                max-width: 500px;
+                margin-bottom: 10px;
+                line-height: 137.931%;
+                @include min(xxl){
+                    font-size: 44px;
+                    max-width: 500px;
+                    margin-bottom: 1.25rem;
+                }
+                @include min(3xl){
+                    font-size: 58px;
+                    max-width: 600px;
+                }
+                .head-inner2{
+                    line-height: 137.931%;
+                    display: flex;
+                    background: rgb(231,94,217);
+                    background: -moz-linear-gradient(90deg, rgba(231,94,217,1) 0%, rgba(90,73,245,1) 45%, rgba(72,186,254,1) 100%);
+                    background: -webkit-linear-gradient(90deg, rgba(231,94,217,1) 0%, rgba(90,73,245,1) 45%, rgba(72,186,254,1) 100%);
+                    background: linear-gradient(90deg, rgba(231,94,217,1) 0%, rgba(90,73,245,1) 45%, rgba(72,186,254,1) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e75ed9",endColorstr="#48bafe",GradientType=1);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            p{
+                width: 100%;
+                max-width: 460px;
+                font-size: 16px;
+                margin-bottom: 20px;
+                line-height: 165%;
+                @include min(lg){
+                    font-size: 18px;
+                    max-width: 460px;
+                    margin-bottom: 30px;
+                }
+                @include min(3xl){
+                    font-size: 20px;
+                    max-width: 540px;
+                    margin-bottom: 60px;
+                }
+            }
+            .btn-wrapper{
+                width: 100%;
+                display: flex;
+                position: relative;
+                justify-content: space-between;
+                gap: 0px;
+                a{
+                    width: calc(50% - 5px);
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                @include min (sm){
+                    gap: 30px;
+                    justify-content: flex-start;
+                    a{
+                        width: auto;
+                        padding: 11px 46px;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-image{
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        height: 70%;
+        top: 9%;
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 10%;
+            @include min (lg){
+                object-position: left;
+            }
+        }
+        @include min (lg){
+            width: 50%;
+            left: 50%;
+            height: 100%;
+            top: 0%;
+        }
+    }
+}

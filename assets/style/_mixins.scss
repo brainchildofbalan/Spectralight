@@ -1,0 +1,8 @@
+@mixin min ($breakpoint) { //the name of the mixin is devices
+    @if $breakpoint == sm {@include media-breakpoint-up(sm) {  @content; }}
+    @if $breakpoint == md {@include media-breakpoint-up(md) {  @content; }}
+    @if $breakpoint == lg {@include media-breakpoint-up(lg) {  @content; }}
+    @if $breakpoint == xl {@include media-breakpoint-up(xl) {  @content; }}
+    @if $breakpoint == xxl {@include media-breakpoint-up(xxl) {  @content; }}
+    @if $breakpoint == 3xl {@include media-breakpoint-up(3xl) {  @content; }}
+}

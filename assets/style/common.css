@@ -1,0 +1,29 @@
+.fill-btn {
+  display: flex;
+  border-radius: 10px;
+  background: #5F47F8;
+  border: 1px solid #5F47F8;
+  display: flex;
+  width: auto;
+  height: 54px;
+  padding: 11px 46px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.border-btn {
+  display: flex;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #fff;
+  display: flex;
+  width: auto;
+  height: 54px;
+  padding: 11px 46px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+}/*# sourceMappingURL=common.css.map */

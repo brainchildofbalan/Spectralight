@@ -1,0 +1,143 @@
+@import "../style/bootstrap/custom-mixins";
+
+body{
+
+
+    
+    &.style-kit{
+        background-color: #E6E9EC;
+        font-size: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        header{
+            width: size(300);
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow: hidden;
+            padding: size(10);
+
+            .header-inner{
+                width: 100%;
+                height: size(100);
+                border-radius: size(5);
+                overflow: hidden;
+                background-color: rgba(230, 233, 236, 0.541);
+                margin-bottom: size(10);
+            }
+
+            .header_wrapper{
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+                overflow-y: auto;
+                background-color: #FFFFFF;
+                border-radius: size(10);
+                min-height: 100%;
+                max-height: 100%;
+                padding: size(15);
+            }
+        }
+
+
+        .menu-links > .navbar-nav {
+            & > .nav-item {
+                margin-top: size(18);
+                &:first-child{
+                    margin-top: 0;
+                }
+                & > a{
+                    color: #717780;
+                    text-transform: uppercase;
+                    margin-bottom: size(10);
+                    font-size: size(14);
+                    letter-spacing: size(.4);
+                    padding-left: 0;
+                    font-weight: 500;
+                    padding-right: 0;
+                }
+                .navbar-nav{
+                    a{
+                        padding-left: size(30);
+                        line-height: 1.35;
+                        color: #393E46;
+                        position: relative;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            left: 0px;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                            width: 12px;
+                            height: 12px;
+                            border: 1px solid #979CA5;
+                            border-radius: 50%;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+
+        main{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 20px;
+            opacity: 0;
+
+
+            .introduction{
+                width: 100%;
+                max-width: 820px;
+            }
+
+
+
+            .color-icon{
+                width: 100%;
+                border: 1px solid #000;
+                @include ratio(100, 40);
+            }
+            b{
+                font-weight: 600;
+            }
+
+
+            .copy{
+                font-size: 12px;
+                margin-left: 10px;
+                line-height: 1;
+                color: #333;
+                text-decoration: none;
+                font-weight: 400;
+                background-color: #e2e2e2;
+                border-radius: 3px;
+                padding: 1px 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
+
+
+
+
+
+
+        .image-ratio{
+            width: 100%;
+            background-color: #dadada;
+        }
+        .row{
+            --skin-gutter-x: 1.5rem;
+            --skin-gutter-y: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+body{
+    font-family: $primary-font;
+}
+.fill-btn{
+    display: flex;
+    border-radius: 10px;
+    background: #5F47F8;
+    border: 1px solid #5F47F8;
+    display: flex;
+    width: auto;
+    height: 54px;
+    padding: 11px 46px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+        background-color: #4a34d8;
+        color: #fff;
+        border: 1px solid #4a34d8;
+      }
+}
+
+.border-btn{
+    display: flex;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    display: flex;
+    width: auto;
+    height: 54px;
+    padding: 11px 46px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    &:hover{
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #fff;
+      }
+}
+
+
+
+.title{
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 150%; /* 150% */
+    @include min(lg){
+        font-size: 28px;
+    }
+    @include min(xxl){
+        font-size: 38px;
+    }
+    @include min(3xl){
+        font-size: 48px;
+    }
+}
+.description{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 150% */
+    opacity: .6;
+
+    
+    @include min(xxl){
+        font-size: 17px;
+    }
+    @include min(3xl){
+        font-size: 20px;
+    }
+}
+
+.icon-arrow{
+    width: 21px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: contain;
+    object-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.4749 10.6491C17.4751 10.5363 17.4503 10.4248 17.4022 10.3228C17.3542 10.2208 17.284 10.1307 17.1969 10.0591L14.2509 7.11906C14.1103 6.97861 13.9197 6.89972 13.7209 6.89972C13.5222 6.89972 13.3315 6.97861 13.1909 7.11906C13.1214 7.18852 13.0663 7.27099 13.0287 7.36176C12.9911 7.45253 12.9717 7.54981 12.9717 7.64806C12.9717 7.74631 12.9911 7.8436 13.0287 7.93436C13.0663 8.02513 13.1214 8.1076 13.1909 8.17706L14.9089 9.89906L4.22491 9.89906C4.026 9.89906 3.83524 9.97808 3.69458 10.1187C3.55393 10.2594 3.47491 10.4502 3.47491 10.6491C3.47491 10.848 3.55393 11.0387 3.69458 11.1794C3.83524 11.32 4.026 11.3991 4.22491 11.3991L14.9189 11.3991L13.1859 13.1211C13.1163 13.1905 13.061 13.2731 13.0233 13.3639C12.9856 13.4548 12.9662 13.5522 12.9662 13.6506C12.9662 13.7489 12.9856 13.8463 13.0233 13.9372C13.061 14.0281 13.1163 14.1106 13.1859 14.1801C13.2556 14.2498 13.3383 14.305 13.4293 14.3428C13.5203 14.3805 13.6179 14.3999 13.7164 14.3999C13.8149 14.3999 13.9125 14.3805 14.0035 14.3428C14.0946 14.305 14.1773 14.2498 14.2469 14.1801L17.2549 11.1761C17.3251 11.1075 17.3808 11.0255 17.4186 10.935C17.4564 10.8444 17.4755 10.7472 17.4749 10.6491V10.6491Z' fill='%23F1F6FA'/%3E%3C/svg%3E%0A");
+}
