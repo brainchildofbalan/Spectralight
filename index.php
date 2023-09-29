@@ -5,6 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spectralight</title>
+    <meta name="title" content="Spectralight">
+<meta name="description" content="Telecommunications company specialising in building & maintaining fibre and other communication infrastructures.">
+<meta name="keywords" content="Telecommunications, fibre and other communication infrastructures.">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<link rel="apple-touch-icon" sizes="76x76" href="./assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+<link rel="manifest" href="./assets/images/site.webmanifest">
+<link rel="mask-icon" href="./assets/images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
 
     <!-- style -->
     <link rel="stylesheet" href="./assets/style/style.css" />
