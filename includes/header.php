@@ -56,6 +56,10 @@
 
 <div class="mobile-menu-wrapper">
     <div class="mobile-menu-main">
+
+        <button class="close-icon">
+            close
+        </button>
         <div class="menu">
             <ul>
                 <li>

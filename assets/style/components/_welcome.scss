@@ -36,12 +36,12 @@
           max-width: 550px;
         }
         .nav-link {
-          min-height: 70px;
-          font-size: 20px;
+          min-height: 60px;
+          font-size: 18px;
           font-style: normal;
           font-weight: 400;
           text-align: left;
-          padding: 0px 20px;
+          padding: 0px 30px;
           color: #fff;
           transition: 0.3s all ease-in-out;
           white-space: pre;
@@ -61,7 +61,7 @@
           
           @include min(lg) {
             padding: 0% 0% 0% 2.75rem;
-            min-height: 90px;
+            min-height: 80px;
           }
           @include min(xl) {
             font-size: 20px;
@@ -79,13 +79,13 @@
         max-width: 922px;
         margin-left: auto;
         border-radius: 10px;
-        margin-top: 40px;
+        margin-top: 30px;
         overflow: hidden;
         @include min(lg) {
             margin-top: 0;
         }
         .content-area {
-          padding: 20px;
+          padding: 25px;
           @include min(lg) {
             padding: 25px;
             margin-top: 0;
@@ -106,13 +106,53 @@
         }
 
         .title{
-          line-height: 100%;
-          margin-bottom: 29px;
+          line-height: 130%;
+          margin-bottom: 13px;
+          @include min(lg){
+              margin-bottom: 16px;
+          }
+          
         }
         .description{
           line-height: 165%;
         }
       }
     }
+  }
+}
+
+
+.welcome {
+  &.anim{
+    .tab-content-wrapper,
+    .nav-link span{
+      display: inline-block;
+      transform: translate3d(0px, 60px, 0px);
+      transition-delay: var(--delay, 0s);
+      opacity: 0;
+      transition: 1.5s transform cubic-bezier(0, 1.02, 1, 1), 2s opacity cubic-bezier(0, 1.02, 1, 1);
+      will-change: transform, opacity;
+    }
+
+
+    .tab-content-wrapper .title,
+    .tab-content-wrapper .description{
+      display: inline-block;
+      transform: translate3d(0px, 30px, 0px);
+      transition-delay: var(--delay, 0s);
+      opacity: 0;
+      transition: .6s transform ease-in-out, 1.2s opacity ease-in-out;
+      will-change: transform, opacity;
+    }
+    &.in-viewport{
+      .tab-content-wrapper,
+      .tab-content-wrapper .title,
+      .tab-content-wrapper .description,
+      .nav-link span{
+          transform: translate3d(0px, 0px, 0px);
+          transition-delay: var(--delay, 0s);
+          opacity: 1;
+      }
+  }
   }
 }

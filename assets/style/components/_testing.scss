@@ -1,7 +1,7 @@
 .testing{
     width: 100%;
     position: relative;
-    padding: 40px 0px;
+    padding: 10px 0px 50px;
     background-color: #5F47F8;
     color: #fff;
     overflow: hidden;
@@ -26,8 +26,11 @@
         .title{
             width: 100%;
             line-height: 150%;
-            margin-bottom: 22px;
-            max-width: 430px;
+            margin-bottom: 14px;
+            max-width: 300px;
+            @include min(sm){
+                max-width: 430px;
+            }
             @include min(3xl){
                 max-width: 570px;
             }
@@ -88,5 +91,44 @@
     }
     100% {
       transform:  scale(1.3) rotate(360deg);
+    }
+  }
+
+
+
+
+.testing {
+    &.anim{
+      
+  
+      .title,
+      .description{
+        display: inline-block;
+        transform: translate3d(0px, 30px, 0px);
+        transition-delay: var(--delay, 0s);
+        opacity: 0;
+        transition: .6s transform ease-in-out, 1.2s opacity ease-in-out;
+        will-change: transform, opacity;
+      }
+
+      .image-wrapper{
+        transform: scale(.8) rotate(10deg);
+        opacity: 0;
+        transition: .6s transform ease-in-out, 1.2s opacity ease-in-out;
+        will-change: transform, opacity;
+      }
+      &.in-viewport{
+        .title,
+        .description,
+        .nav-link span{
+            transform: translate3d(0px, 0px, 0px);
+            transition-delay: var(--delay, 0s);
+            opacity: 1;
+        }
+        .image-wrapper{
+            transform: scale(1) rotate(0deg);
+            opacity: 1;
+        }
+    }
     }
   }

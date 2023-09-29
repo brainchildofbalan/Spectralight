@@ -10,14 +10,14 @@
     padding: 100px 0px;
   }
   @include min(3xl) {
-    padding: 200px 0px;
+    padding: 120px 0px;
   }
 
   .heading {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     @include min(3xl) {
       margin-bottom: 40px;
     }
@@ -69,8 +69,8 @@
     .swiper-button-next {
       background-size: contain;
       background-position: center;
-      width: 35px;
-      height: 35px;
+      width: 30px;
+      height: 30px;
       background-repeat: no-repeat;
       font-size: 0;
       background-image: url("data:image/svg+xml,%3Csvg width='45' height='47' viewBox='0 0 45 47' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M44.8555 23.5522L22.2281 0.924805L18.4569 4.69602L34.6462 20.8854L0.705078 20.8853V26.2187H34.6465L18.4569 42.4084L22.2281 46.1796L44.8555 23.5522Z' fill='white'/%3E%3C/svg%3E%0A");
@@ -79,8 +79,8 @@
         transform: translateX(10px);
       }
       @include min(3xl) {
-        width: 50px;
-        height: 50px;
+        width: 42px;
+        height: 42px;
       }
       &.swiper-button-disabled{
         opacity: .5;
@@ -110,8 +110,8 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 150%;
-        opacity: 0.9;
+        line-height: 165%;
+        opacity: 0.7;
         @include min(xxl) {
           font-size: 18px;
         }
@@ -122,7 +122,7 @@
       .author {
         display: flex;
         position: relative;
-        padding-top: 30px;
+        padding-top: 40px;
         margin-top: auto;
         align-items: center;
       }
@@ -155,15 +155,16 @@
         display: flex;
         flex-direction: column;
         padding-left: 20px;
+        flex: 1;
         h4 {
           font-size: 20px;
           font-style: normal;
           font-weight: 400;
           line-height: 135.652%;
-          margin-bottom: 8px;
+          margin-bottom: 3px;
         }
         p {
-          font-size: 15px;
+          font-size: 14px;
           font-style: normal;
           font-weight: 400;
           line-height: 138.667%;
@@ -172,6 +173,30 @@
           opacity: 0.6;
         }
       }
+    }
+  }
+}
+
+
+
+.testimonials {
+  &.anim{
+    .slider-inner,
+    .heading{
+      display: inline-block;
+      transform: translate3d(0px, 30px, 0px);
+      transition-delay: var(--delay, 0s);
+      opacity: 0;
+      transition: .6s transform ease-in-out, 1.2s opacity ease-in-out;
+      will-change: transform, opacity;
+      }
+    &.in-viewport{
+      .slider-inner,
+      .heading{
+        transform: translate3d(0px, 0px, 0px);
+        transition-delay: var(--delay, 0s);
+        opacity: 1;
+    }
     }
   }
 }

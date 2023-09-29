@@ -9,7 +9,7 @@
             <div class="contact-details-section">
                 <div class="row">
                     <div class="col-lg-7">
-                        <div class="row">
+                        <div class="row gy-4 gy-lg-0">
                             <div class="col-12 col-lg-6">
                                 <h4>Contacts</h4>
                                 <div class="link-wrapper">

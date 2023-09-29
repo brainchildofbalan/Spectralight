@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   position: relative;
-  min-height: 160px;
+  min-height: 120px;
   display: flex;
   padding: 0px;
   position: fixed;
@@ -10,6 +10,9 @@
   top: 0;
   z-index: 999;
   transition: .3s min-height ease-in-out;
+  @include min(lg){
+    min-height: 160px;
+  }
 
   &::after {
     width: 100%;
@@ -45,16 +48,22 @@
     align-items: center;
   }
   .logo-wrapper{
-    width: 200px;
+    width: 180px;
     position: relative;
     display: flex;
     flex-direction: column;
+    @include min(lg){
+      width: 200px;
+    }
     .logo {
       position: relative;
-      width: 200px;
+      width: 180px;
       transition: .3s width ease;
       will-change: width;
       margin-left: -20px;
+      @include min(lg){
+        width: 200px;
+      }
       &::after {
         width: 100%;
         position: relative;
@@ -71,7 +80,7 @@
         object-fit: cover;
       }
       @include min(lg) {
-        margin-left: 0;
+        margin-left: -26px;
       }
     }
   }
@@ -110,7 +119,7 @@
           font-style: normal;
           font-weight: 500;
           letter-spacing: -0.14px;
-          border-radius: 3px;
+          border-radius: 30px;
           overflow: hidden;
           position: relative;
           span {
@@ -232,13 +241,14 @@
   width: 100vw;
   pointer-events: none;
   z-index: 9999;
+  
   .mobile-menu-main {
     position: absolute;
     left: 0;
     top: 0;
-    width: 90%;
+    width: 100%;
     height: 100%;
-    max-width: 350px;
+    max-width: 500px;
     background-color: #00002e;
     z-index: 2;
     transform: translateX(-100%);
@@ -248,16 +258,18 @@
       list-style: none;
       padding: 20px;
       width: 100%;
+      padding-top: 60px;
       li {
-        margin: 20px 0;
+        margin: 30px 0;
         width: 100%;
         a {
-          font-size: 18px;
+          font-size: 25px;
           display: flex;
           width: 100%;
           text-decoration: none;
           color: #fff;
           position: relative;
+          font-weight: 300;
           &::after {
             position: absolute;
             right: 0;
@@ -266,24 +278,24 @@
             margin: auto;
             display: block;
             content: "";
-            width: 0;
-            height: 0;
-            border-top: 4px solid transparent; /* Height of the arrow */
-            border-bottom: 4px solid transparent; /* Height of the arrow */
-            border-left: 5px solid #fff;
+            width: 10px;
+            height: 10px;
+            border-right: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            transform: rotate(-45deg);
           }
         }
       }
     }
   }
   .call-btn {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #00002e;
+    background-color: #5F47F8;
     bottom: 0;
     left: 0;
     text-decoration: none;
@@ -316,5 +328,40 @@
       transform: translateX(0);
       pointer-events: all;
     }
+  }
+}
+
+
+
+.close-icon{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #5f47f838;
+  border: none;
+  right: 15px;
+  top: 15px;
+  transform: rotate(45deg);
+  font-size: 0px;
+  &::after{
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    display: block;
+  }
+  &::before{
+    width: 2px;
+    height: 25px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    display: block;
   }
 }
