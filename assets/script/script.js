@@ -86,13 +86,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const itemImg = document.querySelector('.banner-image');
 
     // Track the mouse position
-    bannerWrapper.addEventListener('mousemove', (e) => {
+    bannerWrapper && bannerWrapper.addEventListener('mousemove', (e) => {
         const mouseX = e.clientX;
         const mouseY = e.clientY;
 
         // Get the current position of the item
-        const itemX = itemImg.getBoundingClientRect().left;
-        const itemY = itemImg.getBoundingClientRect().top;
+        const itemX = itemImg && itemImg.getBoundingClientRect().left;
+        const itemY = itemImg && itemImg.getBoundingClientRect().top;
 
         // Calculate the distance between the mouse and the item
         const dx = (mouseX - itemX) / 40;
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    bannerWrapper.addEventListener('mouseleave', (e) => {
+    bannerWrapper && bannerWrapper.addEventListener('mouseleave', (e) => {
         itemImg.style.transform = `translate(0px, 0px) scale(1.04)`;
 
     })

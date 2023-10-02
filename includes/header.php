@@ -10,19 +10,19 @@
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="/">
+                        <a href="./index.php">
                             <span>Home</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/">
+                        <a href="./about-us.php">
                             <span>
                                 About us
                             </span>
                         </a>
                     </li>
                     <li>
-                        <a href="/">
+                        <a href="./services.php">
                             <span>
                                 Services
                             </span>

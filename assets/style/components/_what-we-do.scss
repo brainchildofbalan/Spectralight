@@ -1,0 +1,101 @@
+.what-we-do{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #2F237F;
+    color: #fff;
+    text-decoration: none;
+    padding: 50px 0px;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -100px;
+    @include min(lg){
+        padding: 100px 0px;
+        border-radius: 120px 120px 0px 0px;
+    }
+
+    .row > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+    .image-wrapper{
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        @include min(lg){
+            max-width: 500px;
+            margin-bottom: 0;
+        }
+        @include min(3xl){
+            max-width: 600px;
+        }
+        &::after{
+            display: block;
+            width: 100%;
+            content: '';
+            padding-bottom: 100%;
+        }
+
+
+
+        .image-ring1{
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='648' height='648' viewBox='0 0 648 648' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M643.036 324.08C645.798 324.08 648.04 321.84 647.998 319.079C647.036 256.836 628.134 196.151 593.51 144.332C557.96 91.1269 507.43 49.6584 448.312 25.1707C389.193 0.683006 324.141 -5.7241 261.381 6.75963C198.621 19.2434 140.972 50.0572 95.7246 95.3047C50.4772 140.552 19.6633 198.201 7.17956 260.961C-5.30418 323.721 1.10293 388.773 25.5907 447.892C50.0784 507.01 91.5469 557.54 144.752 593.09C196.571 627.715 257.256 646.616 319.499 647.578C322.26 647.62 324.5 645.378 324.5 642.616L324.5 636.31C324.5 633.549 322.26 631.315 319.499 631.27C260.481 630.309 202.948 612.365 153.811 579.533C103.287 545.774 63.9088 497.791 40.6553 441.652C17.4017 385.513 11.3175 323.739 23.1721 264.142C35.0266 204.545 64.2875 149.802 107.255 106.835C150.222 63.8676 204.965 34.6067 264.562 22.7521C324.159 10.8976 385.933 16.9818 442.072 40.2353C498.211 63.4889 546.194 102.867 579.953 153.391C612.785 202.528 630.729 260.061 631.69 319.079C631.735 321.84 633.969 324.08 636.73 324.08H643.036Z' fill='url(%23paint0_linear_85_108)' fill-opacity='0.7'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_85_108' x1='72.141' y1='61.4533' x2='440.086' y2='757.537' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2315BFFD'/%3E%3Cstop offset='1' stop-color='%239C37FD'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .image-ring2{
+            width: 85%;
+            height: 85%;
+            position: absolute;
+            background-image: url("data:image/svg+xml,%3Csvg width='537' height='537' viewBox='0 0 537 537' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M531.626 268.714C534.387 268.714 536.63 266.476 536.579 263.715C535.623 212.442 519.977 162.479 491.447 119.782C461.991 75.6977 420.124 41.3383 371.141 21.0486C322.157 0.758853 268.257 -4.54986 216.256 5.79374C164.255 16.1373 116.489 41.6687 78.9988 79.1592C41.5083 116.65 15.9769 164.415 5.63334 216.416C-4.71026 268.417 0.598453 322.317 20.8882 371.301C41.1779 420.285 75.5373 462.152 119.621 491.608C162.319 520.137 212.281 535.783 263.554 536.739C266.315 536.791 268.554 534.547 268.554 531.786L268.554 528.276C268.554 525.514 266.315 523.281 263.554 523.226C214.954 522.272 167.603 507.419 127.127 480.374C85.2651 452.403 52.6373 412.646 33.3702 366.131C14.1031 319.616 9.06191 268.432 18.8842 219.052C28.7065 169.672 52.9511 124.314 88.5521 88.7125C124.153 53.1115 169.512 28.8669 218.892 19.0446C268.272 9.22231 319.455 14.2635 365.97 33.5306C412.485 52.7977 452.242 85.4255 480.214 127.288C507.259 167.763 522.112 215.114 523.066 263.714C523.12 266.475 525.354 268.714 528.115 268.714H531.626Z' fill='url(%23paint0_linear_85_104)' fill-opacity='0.7'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_85_104' x1='59.4582' y1='51.1111' x2='364.325' y2='627.863' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2315BFFD'/%3E%3Cstop offset='1' stop-color='%239C37FD'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .image-main-circle{
+            width: 68%;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            border-radius: 50%;
+            overflow: hidden;
+            &::after{
+                content: '';
+                width: 100%;
+                display: flex;
+                position: relative;
+                padding-bottom: 100%;
+            }
+            img{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    .content-wrapper{
+        width: 100%;
+        max-width: 659px;
+        margin-left: auto;
+    }
+}
