@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spectralight | About us</title>
     <meta name="title" content="Spectralight">
-    <meta name="description" content="Telecommunications company specialising in building & maintaining fibre and other communication infrastructures.">
+    <meta name="description"
+        content="Telecommunications company specialising in building & maintaining fibre and other communication infrastructures.">
     <meta name="keywords" content="Telecommunications, fibre and other communication infrastructures.">
     <meta name="robots" content="noindex, nofollow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -21,6 +22,16 @@
 
 
     <!-- style -->
+    <style>
+    .call-us button {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .mobile-menu-main {
+        transform: translateX(-100%);
+    }
+    </style>
     <link rel="stylesheet" href="./assets/style/style.css" />
 </head>
 
@@ -135,7 +146,7 @@
                 </div>
 
 
-                <div class="row">
+                <div class="row mission-vision">
                     <div class="col-12 col-lg-6">
                         <div class="vm-wrapper">
                             <div class="icon">

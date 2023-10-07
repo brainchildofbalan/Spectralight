@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spectralight</title>
     <meta name="title" content="Spectralight">
-<meta name="description" content="Telecommunications company specialising in building & maintaining fibre and other communication infrastructures.">
-<meta name="keywords" content="Telecommunications, fibre and other communication infrastructures.">
-<meta name="robots" content="noindex, nofollow">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="language" content="English">
-<link rel="apple-touch-icon" sizes="76x76" href="./assets/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
-<link rel="manifest" href="./assets/images/site.webmanifest">
-<link rel="mask-icon" href="./assets/images/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Telecommunications company specialising in building & maintaining fibre and other communication infrastructures.">
+    <meta name="keywords" content="Telecommunications, fibre and other communication infrastructures.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
+    <style>
+        .call-us button {
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .mobile-menu-main {
+            transform: translateX(-100%);
+        }
+    </style>
 
     <!-- style -->
     <link rel="stylesheet" href="./assets/style/style.css" />
@@ -39,15 +49,15 @@
                                     <span class="head-inner1" style="--delay : 0s">
                                         <span> Spectralight Communications </span>
                                     </span>
-                                    <span class="head-inner2"  style="--delay : .15s">
+                                    <span class="head-inner2" style="--delay : .15s">
                                         <span> Connecting you with quality </span>
                                     </span>
                                 </h1>
-                                <p  style="--delay : .3s">
+                                <p style="--delay : .3s">
                                     Please have a look around our site to see what services we
                                     offer and how we might be able to help your business
                                 </p>
-                                <div class="btn-wrapper"  style="--delay : .45s">
+                                <div class="btn-wrapper" style="--delay : .45s">
                                     <a href="/" class="fill-btn">Our services</a>
                                     <a href="/" class="border-btn">About us</a>
                                 </div>
@@ -70,20 +80,25 @@
                         <div class="d-flex align-items-start row">
                             <div class="col-12 col-lg-5">
                                 <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                    <button class="nav-link active"  style="--delay : 0s" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><span>Full Turnkey Solutions</span></button>
-                                    <button class="nav-link"  style="--delay : .15s" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span>Blowing & Subducting</span></button>
-                                    <button class="nav-link"  style="--delay : .3s" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span>Network maintenance / uplift</span></button>
-                                    <button class="nav-link"  style="--delay : .45s" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><span>MDU & SDU builds</span></button>
-                                    <button class="nav-link"  style="--delay : .6s" id="v-pills-survey-tab" data-bs-toggle="pill" data-bs-target="#v-pills-survey" type="button" role="tab" aria-controls="v-pills-survey" aria-selected="false"><span>Survey & Planning</span></button>
+                                    <button class="nav-link active" style="--delay : 0s" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><span>Full Turnkey
+                                            Solutions</span></button>
+                                    <button class="nav-link" style="--delay : .15s" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span>Blowing &
+                                            Subducting</span></button>
+                                    <button class="nav-link" style="--delay : .3s" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span>Network
+                                            maintenance / uplift</span></button>
+                                    <button class="nav-link" style="--delay : .45s" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><span>MDU &
+                                            SDU builds</span></button>
+                                    <button class="nav-link" style="--delay : .6s" id="v-pills-survey-tab" data-bs-toggle="pill" data-bs-target="#v-pills-survey" type="button" role="tab" aria-controls="v-pills-survey" aria-selected="false"><span>Survey &
+                                            Planning</span></button>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-7">
                                 <div class="tab-content" id="v-pills-tabContent">
                                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                        <div class="tab-content-wrapper" >
+                                        <div class="tab-content-wrapper">
                                             <div class="content-area">
-                                                <h3 class="title"  style="--delay : .10s">Welcome to Spectralight</h3>
-                                                <p class="description"  style="--delay : .15s">
+                                                <h3 class="title" style="--delay : .10s">Welcome to Spectralight</h3>
+                                                <p class="description" style="--delay : .15s">
                                                     Welcome to Spectralight Communications. We are a
                                                     telecommunications company specialising in building
                                                     & maintaining fibre and other communication
@@ -136,10 +151,10 @@
                         </div>
                         <div class="col-12 col-lg-5">
                             <div class="content-area">
-                                <h3 class="title"  style="--delay : .15s">
+                                <h3 class="title" style="--delay : .15s">
                                     Our ethos – Instead of External PON builds & maintenance.  
                                 </h3>
-                                <p class="description"  style="--delay : .20s">
+                                <p class="description" style="--delay : .20s">
                                     Our business is built on the core principles of quality and
                                     integrity, as well as an in-depth knowledge of what we do,
                                     from the top of the business to the bottom. We thrive on
@@ -189,8 +204,8 @@
 
                     <div class="description-style">
                         <h3 class="title-big">
-                            <span  style="--delay : .10s">Our trusted</span>
-                            <span  style="--delay : .30s">
+                            <span style="--delay : .10s">Our trusted</span>
+                            <span style="--delay : .30s">
                                 <span>
                                     <img src="./assets/images/partners.png" alt="" />
                                 </span>
@@ -391,8 +406,8 @@
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <div class="content-area">
-                            <h3 class="title"  style="--delay : .15s">Quality Testing & Inspection Equipment</h3>
-                            <p class="description"  style="--delay : .20s">
+                            <h3 class="title" style="--delay : .15s">Quality Testing & Inspection Equipment</h3>
+                            <p class="description" style="--delay : .20s">
                                 We use the latest Exfo testing equipment to test and
                                 self-certify all our work before handover. All our engineers
                                 have been using this equipment throughout their careers, so as

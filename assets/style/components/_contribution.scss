@@ -72,4 +72,14 @@
         position: relative;
         gap: 10px;
     }
+    
+    .mission-vision{
+        > div{
+            align-items: flex-start;
+        }
+        @include min(lg){
+            --skin-gutter-x: 150px;
+            --skin-gutter-y: 0;
+        }
+    }
 }

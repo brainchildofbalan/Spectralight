@@ -5,8 +5,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spectralight</title>
+    <meta name="title" content="Spectralight">
+    <meta name="description" content="Telecommunications company specialising in building & maintaining fibre and other communication infrastructures.">
+    <meta name="keywords" content="Telecommunications, fibre and other communication infrastructures.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- style -->
+    <style>
+        .call-us button {
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .mobile-menu-main {
+            transform: translateX(-100%);
+        }
+    </style>
     <link rel="stylesheet" href="./assets/style/style.css" />
 </head>
 
@@ -34,8 +57,7 @@
                         </div>
                         <div class="col-12 col-lg-6">
                             <div class="image-wrapper">
-                                <img src="./assets/images/contact-us/banner-image.png" alt="Contact us banner"
-                                    srcset="">
+                                <img src="./assets/images/contact-us/banner-image.png" alt="Contact us banner" srcset="">
                             </div>
                         </div>
                     </div>
@@ -95,11 +117,12 @@
                                                     <img src="./assets/images/contact-us/location.svg" alt="">
                                                 </span>
                                                 <span>
-                                                    Unit 64 Hillgrove Business Park, Nazeing Road, Nazeing, Waltham Abbey, Essex, EN9 2HB
+                                                    Unit 64 Hillgrove Business Park, Nazeing Road, Nazeing, Waltham
+                                                    Abbey, Essex, EN9 2HB
                                                 </span>
                                             </a>
-                                           
-                                            
+
+
                                         </li>
                                         <li>
                                             <a href="/">
@@ -148,13 +171,16 @@
                                         </li>
                                     </ul>
                                 </div>
-                                
-                                <div class="map-section">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7842.185844648102!2d76.0138096244995!3d10.649888984411508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam%2C%20Netherlands!5e0!3m2!1sen!2sin!4v1695835801653!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                                
+
+
+
                             </div>
 
+                        </div>
+                        <div class="col-12">
+                            <div class="map-section">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7842.185844648102!2d76.0138096244995!3d10.649888984411508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam%2C%20Netherlands!5e0!3m2!1sen!2sin!4v1695835801653!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -168,7 +194,7 @@
                             <img src="./assets/images/contact-us/review.svg" alt="">
                         </div>
                         <h3 class="text-wrapper">
-                            Read OurGoogle Client Review
+                            Read Our Google Client Review
                         </h3>
                     </div>
                     <div class="link-wrapper">

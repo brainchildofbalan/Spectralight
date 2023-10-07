@@ -40,7 +40,9 @@
 
             </div>
             <div class="call-us">
-                <a href="/">Book a call</a>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Call us
+                </button>
             </div>
 
             <div class="menu-toggle" id="menu-toggle">
@@ -63,22 +65,25 @@
         <div class="menu">
             <ul>
                 <li>
-                    <a href="/">Home</a>
+                    <a href="./index.php">Home</a>
                 </li>
                 <li>
-                    <a href="/">About us</a>
+                    <a href="./about-us.php">About us</a>
                 </li>
                 <li>
-                    <a href="/">Services</a>
+                    <a href="./services.php">Services</a>
                 </li>
                 <li>
-                    <a href="/">Contact us</a>
+                    <a href="./contact-us.php">Contact us</a>
                 </li>
 
             </ul>
 
         </div>
-        <a href="/" class="call-btn">Call us</a>
+        <!-- <a href="/" class="call-btn">Call us</a> -->
+        <button type="button" class="call-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Call us
+        </button>
     </div>
     <div class="mobile-menu-overlay"></div>
 </div>

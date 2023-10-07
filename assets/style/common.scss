@@ -23,11 +23,13 @@ body .row{
     @include min(lg){
         height: 54px;
     }
+    @media (hover: hover) {
     &:hover{
         background-color: #4a34d8;
         color: #fff;
         border: 1px solid #4a34d8;
       }
+    }
 }
 
 .border-btn{
@@ -47,11 +49,13 @@ body .row{
     @include min(lg){
         height: 54px;
     }
+    @media (hover: hover) {
     &:hover{
         background-color: #fff;
         color: #000;
         border: 1px solid #fff;
       }
+    }
 }
 
 
